@@ -6,13 +6,24 @@ void main() {
       home: Scaffold(
         backgroundColor: Color.fromARGB(255, 19, 99, 164),
         body: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             gradient: LinearGradient(
-              colors: [Colors.lightBlueAccent, Colors.tealAccent]
+              colors: [
+                Colors.lightBlueAccent,
+               Colors.tealAccent
+               ],
+               begin: AlignmentGeometry.topStart,
+               end: AlignmentGeometry.bottomEnd,
             ),
           ),
           child: const Center(
-            child: Text("Hello World!!"),
+            child: Text(
+              "Hello World!!", 
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 28,
+            ),
+            ),
                 ),
         ),
       ),
